@@ -1,0 +1,25 @@
+# Logs
+*.log
+
+# Runtime data
+*.pid
+*.seed
+
+# Dependency directories
+node_modules/
+
+# Environment files
+.env
+.env.local
+
+# Build directories
+dist/
+build/
+
+# IDE/Editor
+.vscode/
+.idea/
+
+# OS metadata
+.DS_Store
+Thumbs.db

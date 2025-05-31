@@ -77,9 +77,8 @@
     <canvas id="canvas" class="hidden"></canvas> <!-- For capturing frames -->
 
     <div class="io-areas">
-        <div>
-            <label for="baseURL">Base API:</label><br>
-            <input id="baseURL" name="Instruction" value="http://localhost:8080"></textarea>
+        <div>            <label for="baseURL">Base API:</label><br>
+            <input id="baseURL" name="Instruction" value="http://localhost:1234" style="width: 300px">
         </div>
         <div>
             <label for="instructionText">Instruction:</label><br>
@@ -126,6 +125,7 @@
                     'Content-Type': 'application/json'
                 },
                 body: JSON.stringify({
+                    model: "moondream2",
                     max_tokens: 100,
                     messages: [
                         { role: 'user', content: [
